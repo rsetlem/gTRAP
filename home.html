@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>G-TRAP</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/justified-nav.css" rel="stylesheet">
+	<link href="bootstrap/css/jumbotron-narrow.css" rel="stylesheet">
+	
+	<style>
+		* { margin: 0; padding: 0; }
+	
+		#bg { position: fixed; top: 0; left: 0; }
+		.bgwidth { width: 100%; }
+		.bgheight { height: 100%; }
+		
+		#page-wrap { position: relative; width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+		p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+	</style>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		$(function() {   
+		
+			var theWindow        = $(window),
+			    $bg              = $("#bg"),
+			    aspectRatio      = $bg.width() / $bg.height();
+			    			    		
+			function resizeBg() {
+				
+				if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+				    $bg
+				    	.removeClass()
+				    	.addClass('bgheight');
+				} else {
+				    $bg
+				    	.removeClass()
+				    	.addClass('bgwidth');
+				}
+							
+			}
+			                   			
+			theWindow.resize(function() {
+				resizeBg();
+			}).trigger("resize");
+		
+		});
+	</script>
+	
+  </head>
+  <body>
+<div class="container">
+
+      <div class="masthead">
+        <h2 class="text-muted"><center>G-TRAP</center></h2>
+        <nav>
+          <ul class="nav nav-justified">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="project.php">Project</a></li>
+            <li><a href="Download.html">Downloads</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+	<!-- Carousel
+    ================================================== -->
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+		<li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="img/1.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>gTRAP</h1>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="img/2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>DNA</h1>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="img/4.jpeg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Transcription</h1>
+              
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="third-slide" src="img/5.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Translation</h1>
+              
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="third-slide" src="img/6.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Protein Modifications</h1>
+              
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="third-slide" src="img/7.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Protein</h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+	<br/>	
+	<br/>	
+	<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="1280" height="960" src="Video.mp4"  frameborder="0"></iframe></div>
+
+	<!-- 16:9 aspect ratio -->
+<!--<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" width="560" height="215" src="https://www.youtube.com/embed/P35M1jN8_4c" frameborder="0" allowfullscreen></iframe>
+</div>-->
+
+<!-- 4:3 aspect ratio
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>-->
+     <!-- <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>-->
+	  <div class="row marketing">
+        <div class="col-lg-20">
+          <h4>gTRAP</h4>
+          <p>This website gives you an understanding of the entire Gene to protein network. Enter Gene ID or Gene Name to fetch Transcription Factors, Alternative splicing, Proteins, Protein Modifications and Protein Variations.</p>
+<div class="col-lg-20">
+         <h4>Example</h4>
+			<p>To get information about Transcription Factors, select to search either by GeneId/GeneName and check the box of Transcription Factors. Click submit to get all the Transcription factors linked to the Gene of Interest.</p>
+		</div>
+
+        <div class="col-lg-20">
+         <h4>Acknowledgement</h4>
+			<p>We would like to thank School of Informatics & Computing @IUPUI, Professor Xiaowen Lui, Professor Huanmei Wu for extending their support in our project.</p>
+		</div>
+    </div> 
+	</div>
+	<div align="center" border="0" width="600">
+                  <tbody><tr>
+                    <td height="20"><h4 class="style28">Feedback @ <a href="mailto:gTRAP@gmail.com">Team gTRAP</a></h4>	
+                  </tr>
+      </tbody></div>
+	  <!-- /container -->
+	<div><footer class="footer">
+		<p class="style32" align="center"><a href="http://soic.iupui.edu/" class="style19"><img src="logo.png" alt="logoarea"/></a></p>
+        <p><center>SCHOOL OF INFORMATICS AND COMPUTING, IUPUI</center></p>
+      </footer>
+	  </div>
+
+    </div> <!-- /container -->
+	<footer class="footer">
+        <p><center>© 2015 Company, Inc.</center></p>
+      </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
